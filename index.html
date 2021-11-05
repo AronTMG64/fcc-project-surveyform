@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <section id="start">
+        <img id="mcc-logo" src="MCC-logo.png" alt="MCC-logo">
+    </section>
+
+    <section id="signup">
+        <div id="title-container">
+            <h1 id="title">Sign up</h1>
+
+            <p id="description">Minecraft Championship is a minecraft tournament created by NOXCREW and
+                DangThatsALongName
+                where 40 different
+                content creators play and compete in different minigames. The games are played in teams of four. MCC is
+                normally once every month. And here you can sign up for MCC if you are a content creator.</p>
+        </div>
+    </section>
+
+    <section id="input-section">
+        <form id="survey-form">
+            <div id="input">
+                <div id="name-and-age">
+                    <input class="input" name="name" id="name" type="text" required placeholder="Name">
+                    <label id="name-label" for="name">Name</label>
+                    <input class="input" name="age" id="number" type="number" placeholder="age" min="13" max="100">
+                    <label id="number-label" for="age">Age</label>
+                </div>
+
+                <input name="email" class="input" id="email" type="email" required placeholder="Email">
+                <label id="email-label" for="email">email</label>
+                <input class="input" type="text" placeholder="Phone number (optional)">
+                <input class="input" type="text" placeholder="Minecraft username">
+
+                <select multiple id="dropdown">
+                    <option selected disabled value="Youtube">On what platform are you creating content?</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Twitch">Twitch</option>
+                </select>
+
+                <div id="channels">
+                    <div>
+                        <h2>Youtube</h2>
+                        <input type="text" placeholder="Channel name">
+                    </div>
+
+                    <div>
+                        <h2>Twitch</h2>
+                        <input type="text" placeholder="Channel name">
+                    </div>
+
+                    <div>
+                        <h2>Other platforms</h2>
+                        <input type="text" placeholder="Platform name">
+                    </div>
+
+                    <input id="other-channels" type="text" placeholder="Channel name">
+
+                    <div>
+                        <h2>Other platforms</h2>
+                        <input type="text" placeholder="Platform name">
+                    </div>
+
+                    <input id="other-channels" type="text" placeholder="Channel name">
+                </div>
+
+                <div id="gender">
+                    <h1>Your gender</h1>
+
+                    <div id="male">
+                        <input name="gender" type="radio">
+                        <p>Male</p>
+                    </div>
+
+                    <div id="female">
+                        <input name="gender" type="radio">
+                        <p>Female</p>
+                    </div>
+                </div>
+
+                <textarea placeholder="Tell us briefly about yourself" name="" id="about" cols="30"
+                    rows="10"></textarea>
+
+                <div id="rules">
+                    <h1>Rules</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur debitis tempore maiores
+                        accusantium sint repellendus distinctio, excepturi at quas qui! Quod doloribus animi sequi
+                        asperiores nihil reprehenderit dignissimos ad iure ducimus, consectetur rerum et reiciendis
+                        laudantium quaerat natus! Qui, dolor.</p>
+                </div>
+
+                <div>
+                    <div id="accept-rules">
+                        <input type="checkbox" name="checkbox">
+                        <p>I accept the rules</p>
+                    </div>
+
+                    <div id="dont-accept-rules">
+                        <input type="checkbox" name="checkbox">
+                        <p>I do not accept the rules</p>
+                    </div>
+                </div>
+
+                <div id="button">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
